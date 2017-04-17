@@ -11,6 +11,9 @@ def normalize_arabic(input_file,output_file):
     file_content = re.sub("ئ", "ء", file_content)
     file_content = re.sub("ة", "ه", file_content)
     file_content = re.sub("گ", "ك", file_content)
+    # remove the arabic diacritics from text
+    file_content = re.sub(arabic_diacritics, '', file_content)
+    
     # writing text to output file 
     output = open(output_file, "w")
     

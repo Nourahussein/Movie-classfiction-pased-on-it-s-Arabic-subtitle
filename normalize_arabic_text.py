@@ -2,6 +2,11 @@ import re
 import string
 import sys
 import argparse
+# list of arabic punctuations which should remove
+arabic_punctuations = '''`÷×؛<>_()*&^%][ـ،/:"؟.,'{}~¦+|!”…“–ـ'''
+english_punctuations = string.punctuation
+punctuations_list = arabic_punctuations + english_punctuations
+
 def normalize_arabic(input_file,output_file):
     file_content = open(input_file).read()
     

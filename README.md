@@ -12,16 +12,16 @@ basic phases
 2- cleaning data:
 -----------------
 
-Pre-process arabic text (remove diacritics, punctuations and repeating characters)
+Pre-process arabic text (remove diacritics, punctuations and repeating characters).
 
-3-text extraction
+3-text extraction:
+------------------
+
+4-classification:
 -----------------
 
-4-classification
-----------------
+5-training:
+-----------
 
-5-training
+6-testing:
 ----------
-
-6-testing
----------

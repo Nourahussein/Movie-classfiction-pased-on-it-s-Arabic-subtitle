@@ -2,10 +2,25 @@ import re
 import string
 import sys
 import argparse
+#arabic diacritics
+arabic_diacritics = re.compile("""
+                             ّ    | # Tashdid
+                             َ    | # Fatha
+                             ً    | # Tanwin Fath
+                             ُ    | # Damma
+                             ٌ    | # Tanwin Damm
+                             ِ    | # Kasra
+                             ٍ    | # Tanwin Kasr
+                             ْ    | # Sukun
+                             ـ     # Tatwil/Kashida
+                         """, re.VERBOSE)
 # list of arabic punctuations which should remove
+numbers = '''0123456789'''
+
 arabic_punctuations = '''`÷×؛<>_()*&^%][ـ،/:"؟.,'{}~¦+|!”…“–ـ'''
 english_punctuations = string.punctuation
-punctuations_list = arabic_punctuations + english_punctuations
+english_alphpets ='''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'''
+punctuations_list = arabic_punctuations + english_punctuations +numbers + english_alphpets
 
 def normalize_arabic(input_file,output_file):
     file_content = open(input_file).read()

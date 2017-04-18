@@ -11,8 +11,8 @@ def tokanzie_into_csv(input_file,output_file,  movie_name):
   file_content = open(input_file).read()
   tokens = nltk.word_tokenize(file_content)
   df = pd.DataFrame(tokens, columns=[movie_name])
-  return df
   df.to_csv(output_file, index=False) 
+  return df
 
 # example :tokanzie_into_csv("output.txt", "new.csv","Deadpool")
 

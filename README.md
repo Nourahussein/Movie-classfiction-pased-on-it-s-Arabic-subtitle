@@ -17,6 +17,11 @@ Pre-process arabic text (remove diacritics, punctuations and repeating character
 3-text extraction:
 ------------------
 
+1-remove stop words
+2- lemmatize text using "Madamira" software
+3- stemming.
+4- caculate the ferquancy of every word in each genre to use it later in claasfiation phase.
+
 4-classification:
 -----------------
 

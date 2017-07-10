@@ -38,4 +38,4 @@ movie class. and finaly determine the main generis of this movie.
 
 6-testing:
 ----------
-*testing the code on some movies and calculate the accuracy.
+* testing the code on some movies and calculate the accuracy.

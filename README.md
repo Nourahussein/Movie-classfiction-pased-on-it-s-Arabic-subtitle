@@ -17,7 +17,7 @@ basic phases
 3-text extraction:
 ------------------
 
-1-remove stop words
+1-remove stop words.
 
 2- stemming using  Khoja Stemmer : http://zeus.cs.pacificu.edu/shereen/research.htm  with command line and connect it with python.
 

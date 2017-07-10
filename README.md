@@ -18,10 +18,12 @@ Pre-process arabic text (remove diacritics, punctuations and repeating character
 ------------------
 
 1-remove stop words
-2- lemmatize text using "Madamira" software
-3- stemming.
-4- caculate the ferquancy of every word in each genre to use it later in claasfiation phase.
+--------------------
+2- stemming using  Khoja Stemmer : http://zeus.cs.pacificu.edu/shereen/research.htm  with command line and connect it with python.
+----------------------------------------------------------------------------------------------------------------------------------
 
+4- caculate the ferquancy of every word in each genre to use it later in claasfiation phase.
+--------------------------------------------------------------------------------------------
 4-classification:
 -----------------
 

@@ -1,41 +1,33 @@
-# Movie-classfiction-pased-on-it-s-Arabic-subtitle
+# Movie Genre Classification from Subtitles
 
-basic phases 
-============
-
-
-1- getting data:
-----------------
-
-* download arabic movies' subtitles from http://subscene.com/
- 
-2- cleaning data:
------------------
-
-* Pre-process arabic text (remove diacritics, punctuations and repeating characters).
-
-3-text extraction:
-------------------
-
-1-remove stop words.
-
-2- stemming using  Khoja Stemmer : http://zeus.cs.pacificu.edu/shereen/research.htm  with command line and connect it with python.
+## Domain Background
+In this project, aim is to categorise movies into genres by analysing Arabic subtitles with machine learning techniques. 
+### main stages:
+1- cleaning data: Pre-process arabic text (remove diacritics, punctuations and repeating characters.
+2- text extraction:
+* remove stop words.
+* stemming using Khoja Stemmer : http://zeus.cs.pacificu.edu/shereen/research.htm with command line and connect it with python.
+* caculate the ferquancy of every word in each genre to use it later in claasfiation phase.
+3- classification.
+4- testing.
 
 
-3- caculate the ferquancy of every word in each genre to use it later in claasfiation phase.
+## install:
+* [NumPy]
+* [Pandas]
+* [NLTK]
+* [Matplotlib]
+
+You will also need to have software installed to run and execute jupyter notebook.
 
 
-4-classification:
------------------
-* classifiy each movie into it's main genres by comparing the most common words in this movie with the  csv file of mean of each 
-movie class. and finaly determine the main generis of this movie.
 
+## Data:
+download Arabic subtitles from http://subscene.com/
+it contains 20 subtitle for each genre.
+you can find it in subtitles dirctory.
 
-5-training:
------------
+## How to Contribute: 
+`git clone https://github.com/Nourahussein/Movie-classfiction-pased-on-it-s-Arabic-subtitle
+cd ` 
 
-* train the code for each genre and get the result of the mean wight of each word from most common words in each genre.
-
-6-testing:
-----------
-* testing the code on some movies and calculate the accuracy.
